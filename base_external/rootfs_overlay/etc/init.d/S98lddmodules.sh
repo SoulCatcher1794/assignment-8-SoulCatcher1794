@@ -6,8 +6,8 @@
 case "$1" in
 start)
 echo "Starting init script for Module Loading"
-scull_load
-module_load faulty
+scull_load.sh
+module_load.sh faulty
 modprobe hello
 ;;
 stop)
