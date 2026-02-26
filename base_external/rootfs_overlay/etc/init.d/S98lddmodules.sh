@@ -9,9 +9,11 @@ echo "Starting init script for Module Loading"
 scull_load.sh
 module_load.sh faulty
 modprobe hello
+aesdchar_load.sh
 ;;
 stop)
 echo "Removing user modules"
+aesdchar_unload.sh
 rmmod hello
 module_unload.sh faulty
 scull_unload.sh
