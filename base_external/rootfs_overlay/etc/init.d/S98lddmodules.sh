@@ -5,7 +5,7 @@
 
 case "$1" in
 start)
-echo "Starting init script for Module Loading"
+echo "--- Starting init script for Module Loading ---"
 scull_load.sh
 module_load.sh faulty
 modprobe hello

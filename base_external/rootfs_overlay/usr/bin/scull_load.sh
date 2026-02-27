@@ -11,7 +11,6 @@ else
     group="wheel"
 fi
 
-echo "Load ${module} module, exit on failure"
 KERNEL_VERSION=$(uname -r)
 # Invoke insmod with all arguments we got
 # and use a pathname, as insmod doesn't look in . by default
